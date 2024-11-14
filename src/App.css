@@ -1,38 +1,334 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: 0.2s all ease-in-out;
+}
+
 .App {
-  text-align: center;
+  padding: 0 5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.header-item {
+  width: 50%;
+  position: absolute;
+  right: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.1rem;
+}
+
+.header-item li {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid silver;
+  cursor: pointer;
+
+}
+
+.header-item li:hover {
+  background-color: silver;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-img {
+  height: 50px;
+  padding: 8px 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.btn {
+  font-size: 18px;
+  background-color: #2196f3;
+  padding: 10px 16px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.wave {
+  font-size: 2.6rem;
+  animation: waving 0.5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes waving {
+  0% {
+    transform: scale(1.1);
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    transform: scale(1.2);
   }
+
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.tag {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.heading {
+  display: flex;
+}
+
+.heading h1 {
+  margin: 4rem 0 1rem 0;
+  font-weight: 200;
+}
+
+.name p {
+  font-weight: 800;
+}
+
+.about {
+  display: flex;
+}
+
+.div-1 {
+  width: 50%;
+}
+
+.div-2 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.myself {
+  font-size: 1.4rem;
+  color: #a5a5a5;
+}
+
+.div-1 ul {
+  padding-inline-start: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.div-1 button {
+  padding: 0.7rem;
+  margin: 0 2rem 0 0;
+  background-color: #2196f3;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  border: 1px solid black;
+}
+
+.div-2 img {
+  width: 70vh;
+  height: 60vh;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -30%);
+}
+
+.icon-back {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  width: 40px;
+}
+
+.icon-back:hover {
+  color: #fff;
+  background-color: #2196f3;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in;
+}
+
+.skill-div1 {
+  width: 50%;
+  height: 90vh;
+}
+
+.skill-div2 {
+  padding: 8px;
+  width: 50%;
+  align-content: center;
+}
+
+.skill-div1 img {
+  width: 70vh;
+  height: 60vh;
+  position: relative;
+  bottom: 0;
+  transform: translate(0%, 30%);
+}
+
+.flex {
+  display: flex;
+}
+
+.skill-div2 ul {
+  display: flex;
+  justify-content: space-around;
+  padding-inline-start: 0px;
+  font-size: 30px;
+}
+
+.icon-back2 {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+}
+
+.icon-back2:hover {
+  background-color: #2196f3;
+  color: white;
+  transition-duration: 0.1s;
+}
+
+.skill-use {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.exp-div1 {
+  width: 50%;
+  height: 90vh;
+  padding-top: 2rem;
+  align-content: center;
+}
+
+.exp-div2 {
+  width: 50%;
+  height: 95vh;
+  align-content: center;
+  text-align: center;
+}
+
+.exp-div2 img {
+  width: 70vh;
+  height: 70vh;
+  position: relative;
+  bottom: 0;
+}
+
+.prog-back {
+  background-color: #ccc;
+  width: 100%;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.prog1 {
+  background-color: #2196f3;
+  width: 80%;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.prog2 {
+  background-color: #2196f3;
+  width: 75%;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.prog3 {
+  background-color: #2196f3;
+  width: 70%;
+  height: 20px;
+  border-radius: 50px;
+}
+
+.projects {
+  text-align: center;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+  justify-content: center;
+}
+
+.project-list li {
+  padding: 10px 16px;
+  background-color: #fff;
+  width: calc(50% - 32px - 8px - 2px);
+  border-radius: 20px;
+  margin: 8px 4px;
+  /* box-shadow: 4px 4px 8px 0px #ccc inset,4px 4px 8px 0px #ccc; */
+  box-shadow: 4px 4px 16px 0px #ccc inset, -0px -0px 0px 0px #ccc;
+  cursor: pointer;
+}
+
+.project-list li:hover {
+  box-shadow: 4px 4px 8px 0px #ccc inset, 4px 4px 8px 0px #ccc;
+}
+
+.project-list li p {
+  color: #978e8e;
+  font-size: 1.1rem;
+}
+
+.getin-touch ul {
+  padding-inline-start: 0;
+  width: 60%;
+}
+
+.linkedin {
+  margin-right: 4px;
+  background-color: #0077B5;
+  color: white;
+}
+
+.github {
+  margin-right: 4px;
+  background-color: #4078c0;
+  color: white;
+}
+
+.google {
+  margin-right: 4px;
+  background-color: #DB4437;
+  color: white;
+}
+
+.facebook {
+  margin-right: 4px;
+  background-color: #1877F2;
+  color: white;
+}
+
+.footer {
+  background-color: #0077B5;
+  height: 80px;
+
+}
+
+.footer-copy {
+  text-align: center;
+  height: 100%;
+  align-content: center;
+  color: silver;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
